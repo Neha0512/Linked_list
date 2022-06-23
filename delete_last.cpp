@@ -1,3 +1,5 @@
+// Time complexity is theta(n), where n is the number of nodes, because we are traversing throughout the liked list except the last node.
+
 #include<bits/stdc++.h>
 using namespace std;
 
