@@ -19,23 +19,12 @@ void print(Node *head)
 	}
 }
 
-void reversed(Node *head, Node *curr, Node *prev){
-	if(curr==NULL){
-		head=prev;
-		return;
-	}
-	Node *forw=curr->next;
-	reversed(head, forw, curr);
-	curr->next=prev;
-}
-
 Node *rev(Node *head){
-	Node *prev=NULL;
-	Node *curr=head;
-	reversed(head, curr, prev);
-	return head;
-	
-}
+	if(head==NULL || head->next==NULL){
+		return head;
+	}
+	Node *curr
+} 
 
 int main()
 {
